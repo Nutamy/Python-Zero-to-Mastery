@@ -33,4 +33,8 @@ for i in items:
   print(i)
 
 #dic.clear()
-print(dic.popitem())
+#print(dic.popitem())
+
+dic.update({'name':'Carl'})
+dic.update({'b':'Simona'})
+print(dic)
