@@ -1,3 +1,4 @@
+
 class PlayCharacter:
   # Class Object AttributeError
   membership = True
@@ -7,10 +8,22 @@ class PlayCharacter:
       self.age = age
 
   def shout(self):
-    print(f'My name is {self.name}')
+    return f'My name is {self.name}'
+
+  def run(self):
+    return f'{self.name} runs about {self.age} km'
+
+  def sleep(self):
+    print(f'{self.name} is sleeping\n')
+
 
 player1 = PlayCharacter('Cindy', 45)
 player2 = PlayCharacter('Tim', 18)
 
+
 print(player1.shout())
+print(player1.run())
+player1.sleep()
+
 print(player2.shout())
+print(player2.run())
